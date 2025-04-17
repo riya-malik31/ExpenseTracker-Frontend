@@ -16,8 +16,8 @@ const Dashboard = () => {
 
   const fetchData = async () => {
     try {
-      const incomeResponse = await fetch(`https://expense-tracker-backend-six-delta.vercel.app/get-income/${userId}`);
-      const expenseResponse = await fetch(`https://expense-tracker-backend-six-delta.vercel.app/get-expenses/${userId}`);
+      const incomeResponse = await fetch(`https://expensetracker-backend-bs8p.onrender.com/get-income/${userId}`);
+      const expenseResponse = await fetch(`https://expensetracker-backend-bs8p.onrender.com/get-expenses/${userId}`);
 
       const incomeData = await incomeResponse.json();
       const expenseData = await expenseResponse.json();

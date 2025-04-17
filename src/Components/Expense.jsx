@@ -19,7 +19,7 @@ const Expense = () => {
     
       const fetchTotalExpense = async () => {
         try {
-          const response = await fetch(`https://expense-tracker-backend-six-delta.vercel.app/get-expenses/${userId}`);
+          const response = await fetch(`https://expensetracker-backend-bs8p.onrender.com/get-expenses/${userId}`);
           const data = await response.json();
     
           if (response.ok) {
@@ -47,7 +47,7 @@ const Expense = () => {
     }
   
     try {
-      const response = await fetch("https://expense-tracker-backend-six-delta.vercel.app/add-expense", {
+      const response = await fetch("https://expensetracker-backend-bs8p.onrender.com/add-expense", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...expenseData, userId }),
@@ -68,7 +68,7 @@ const Expense = () => {
   };
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`https://expense-tracker-backend-six-delta.vercel.app/delete-expense/${id}`, {
+      const response = await fetch(`https://expensetracker-backend-bs8p.onrender.com/delete-expense/${id}`, {
         method: 'DELETE',
       });
 
