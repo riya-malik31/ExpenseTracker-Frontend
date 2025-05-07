@@ -9,10 +9,7 @@ const Expense = () => {
     });
      const [totalExpense, setTotalExpense] = useState(0); 
      const [expenseHistory, setExpenseHistory] = useState([]);
-     const userId = localStorage.getItem("userId");
-     const username = localStorage.getItem("username");
-
-    
+     const userId = localStorage.getItem("userId");    
       useEffect(() => {
         if (userId) {
           fetchTotalExpense();
@@ -21,7 +18,7 @@ const Expense = () => {
     
       const fetchTotalExpense = async () => {
         try {
-          const response = await fetch(`https://expensetracker-backend-bs8p.onrender.com/get-expenses/${userId}/${username}`);
+          const response = await fetch(`https://expensetracker-backend-bs8p.onrender.com/get-expenses/${userId}`);
           const data = await response.json();
     
           if (response.ok) {
