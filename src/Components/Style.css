@@ -644,7 +644,7 @@ section.main-trans {
       display: block;
     }
   }
-  @media (min-width: 875px){
+  @media (max-width: 875px){
     #ul-side li {
         color: #fff;
         display: flex;
