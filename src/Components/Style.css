@@ -644,5 +644,14 @@ section.main-trans {
       display: block;
     }
   }
+  @media (min-width: 875px){
+    #ul-side li {
+        color: #fff;
+        display: flex;
+        font-size: 18px;
+        gap: 7px;
+        padding: 10px;
+    }
+  }
   
 
